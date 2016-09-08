@@ -33,6 +33,7 @@ function sumArrayN2 (array) {
   //iterate through array for start Number
   for(var i = 0; i < array.length; i++) {
     currentSum = array[i];
+    greatestSum = Math.max(currentSum, greatestSum);
     for(var j = i + 1; j < array.length; j++) {
       currentSum += array[j];
       greatestSum = Math.max(currentSum, greatestSum);
